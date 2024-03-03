@@ -11,8 +11,12 @@
 |[Github](https://github.com/sw930718) | [Github](https://github.com/cyh5757) | [Github](https://github.com/Polar-Bear-Poby) | [Github](https://github.com/dustywindow) | [Github](https://github.com/JiEuNparrk) | [Github](https://github.com/yeliiim) |
 
 ## Wrap Up Report
+https://github.com/Dementia-Diagnosis-Project/memoria_AI/files/14472283/default.pdf
 
 ## Final Score
+- 창업 경진 대회 대상
+- 프로젝트 발표회 최우수상
+<img width="809" alt="Untitled" src="https://github.com/Dementia-Diagnosis-Project/memoria_AI/assets/157015760/ec9c78b6-1fb0-45b6-bc35-1c251bac0be2)https://github.com/Dementia-Diagnosis-Project/memoria_AI/assets/157015760/ec9c78b6-1fb0-45b6-bc35-1c251bac0be2">
 
 # Competition Process
 
