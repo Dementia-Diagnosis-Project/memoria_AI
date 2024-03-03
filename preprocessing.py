@@ -2,7 +2,7 @@
 """
 Created on Fri Jan 12 00:10:08 2024
 
-@author: Park Jieun
+@author: Park jieun
 """
 #!pip install SimpleITK==1.2.0
 #!pip install SimpleITK-SimpleElastix
