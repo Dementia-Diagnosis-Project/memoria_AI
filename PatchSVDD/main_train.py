@@ -108,8 +108,6 @@ def train():
         print(f'Total loss : {loss}\n')
         log_result(name, aurocs)
         enc.save(name)
-        cls_64.save(name)
-        cls_32.save(name)
 
 def log_result(name, aurocs):
     det_64 = aurocs['det_64'] * 100

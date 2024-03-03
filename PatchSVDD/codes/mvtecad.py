@@ -20,13 +20,14 @@ def bilinears(images, shape) -> np.ndarray:
         ret[i] = cv2.resize(images[i], dsize=shape[::-1], interpolation=cv2.INTER_LINEAR)
     return ret
 
-def gray2rgb(images):
-    tile_shape = tuple(np.ones(len(images.shape), dtype=int))
-    tile_shape += (3,)
+# def gray2rgb(images):
+#     # tile_shape = tuple(np.ones(len(images.shape), dtype=int))
+#     # tile_shape += (3,)
 
-    images = np.tile(np.expand_dims(images, axis=-1), tile_shape)
-    # print(images.shape)
-    return images
+#     # images = np.tile(np.expand_dims(images, axis=-1), tile_shape)
+#     images = np.expand_dims(images, axis=-1)
+#     # print(images.shape)
+#     return images
 
 def set_root_path(new_path):
     global DATASET_PATH
@@ -61,13 +62,19 @@ def get_x(mode='train'):
         
         print(f'불러들어온 image 개수 : {len(images)}')
 
+    print(f'이미지 텐서 shape : {images.shape}')
     # MRI 이미지는 흑백이므로 아래 코드는 주석 처리
-    if images.shape[-1] != 3:
-        images = imread.gray2rgb(images)
+    print('텐서 shape 변환!!! \n')
+    # images = np.expand_dims(images, axis=-1)
+    
+    # if images.shape[-1] != 3:
+    #     print('텐서 shape 변환!!! \n')
+    #     images = np.expand_dims(images, axis=-1)
+    #     # images = gray2rgb(images)
 
     images = list(map(resize, images))
     images = np.asarray(images)
-    # images = np.expand_dims(images, axis=-1) 
+    images = np.expand_dims(images, axis=-1) 
     print(f'이미지 텐서 차원 : {images.shape}\n')
     return images
 

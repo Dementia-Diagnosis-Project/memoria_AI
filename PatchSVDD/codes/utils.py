@@ -12,7 +12,7 @@ __all__ = ['crop_image_CHW', 'PatchDataset_NCHW', 'NHWC2NCHW_normalize', 'to_dev
            'distribute_scores', 'resize']
 
 # GPU에 올림
-# obj은 mvtecad의 obj가 아니다.
+# obj은 mvtecad의 obj가 아니
 def to_device(obj, device, non_blocking=False):
     """
 
@@ -133,7 +133,7 @@ def NHWC2NCHW_normalize(x):
     # return x
     return np.transpose(x, [0, 3, 1, 2])
 
-def NHWC12NCHW(x):
+def NHWC2NCHW(x):
     return np.transpose(x, [0, 3, 1, 2])
 
 

@@ -8,16 +8,14 @@ from codes.inspection import eval_encoder_NN_multiK
 from codes.networks import EncoderHier
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--name', default='repeat100')
+parser.add_argument('--name', default='lambda0.1_epoch50_repeat150')
 args = parser.parse_args()
 
-
-def save_maps(name, maps):
+def save_maps(name, maps):  
 
     N = maps.shape[0]
     images = mvtecad.get_x(mode='test')
     masks = mvtecad.get_mask()
-    print(images.shape)
 
     for n in tqdm(range(N)):
         fig, axes = plt.subplots(ncols=2)
@@ -25,7 +23,7 @@ def save_maps(name, maps):
 
         image = resize(images[n], (128, 128))
         mask = resize(masks[n], (128, 128))
-        image = mark_boundaries(image, mask, color=(1, 0, 0), mode='thick')
+        image = mark_boundaries(image, mask, color=(1, 0, 0))
 
         axes[0].imshow(image)
         axes[0].set_axis_off()
@@ -46,7 +44,7 @@ def main():
     enc = EncoderHier(K=64, D=64).cuda()
     enc.load(name)
     enc.eval()
-    results = eval_encoder_NN_multiK(enc)
+    results = eval_encoder_NN_multiK(name, enc, load_ebm=True)
     maps = results['maps_mult']
 
     save_maps(name, maps)
