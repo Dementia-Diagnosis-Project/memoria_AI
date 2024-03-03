@@ -11,7 +11,7 @@
 |[Github](https://github.com/sw930718) | [Github](https://github.com/cyh5757) | [Github](https://github.com/Polar-Bear-Poby) | [Github](https://github.com/dustywindow) | [Github](https://github.com/JiEuNparrk) | [Github](https://github.com/yeliiim) |
 
 ## Wrap Up Report
-https://github.com/Dementia-Diagnosis-Project/memoria_AI/files/14472283/default.pdf
+[https://github.com/Dementia-Diagnosis-Project/memoria_AI/files/14472283/default.pdf](https://github.com/Dementia-Diagnosis-Project/memoria_AI/files/14472296/Memoria.pdf)
 
 ## Final Score
 - 창업 경진 대회 대상
