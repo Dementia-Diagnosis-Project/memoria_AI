@@ -1,27 +1,35 @@
-# [2024 서울 AI 허브 프로젝트] 치매 진단 보조 모델 개발 및 대시보드 구현
-<img width="809" alt="Untitled" src="https://github.com/Dementia-Diagnosis-Project/memoria_AI/assets/157015760/410ab40a-4338-42ae-8472-22d4aeb76ecb">
+# MEMORIA_AI
 
-# Memoria
-라틴어로 기억을 뜻함. 
-치매 진단을 도우는 모델을 개발함으로서 기억을 보존하겠다.
+![Award](img/award.jpg)
 
-## Member
-| 이정수 | 최영환 | 김건 | 정민지 | 박지은 | 이예림 | 
-| :-: | :-: | :-: | :-: | :-: | :-: | 
-|[Github](https://github.com/sw930718) | [Github](https://github.com/cyh5757) | [Github](https://github.com/Polar-Bear-Poby) | [Github](https://github.com/dustywindow) | [Github](https://github.com/JiEuNparrk) | [Github](https://github.com/yeliiim) |
+## 프로젝트 소개
+- 치매 진단을 목표로 다양한 딥러닝 모델을 적용
+- Django, Web 개발, Figma를 활용하여 AI 팀과 UX/UI 팀이 협업한 종합 프로젝트
+- 라틴어로 '기억(Memoria)'을 의미, 기억을 지키기 위한 AI 개발
 
-## Wrap Up Report
-[https://github.com/Dementia-Diagnosis-Project/memoria_AI/files/14472283/default.pdf](https://github.com/Dementia-Diagnosis-Project/memoria_AI/files/14472296/Memoria.pdf)
+## 팀원
+| 이정수 | 최영환 | 김건 | 정민지 | 박지은 | 이예림 |
+|:---|:---|:---|:---|:---|:---|
+| [GitHub](https://github.com/sw930718) | [GitHub](https://github.com/cyh5757) | [GitHub](https://github.com/Polar-Bear-Poby) | [GitHub](https://github.com/dustywindow) | [GitHub](https://github.com/JiEuNparrk) | [GitHub](https://github.com/yeliiim) |
 
-## Final Score
-- 창업 경진 대회 대상
+## 성과
+- 창업 경직 대회 대상
 - 프로젝트 발표회 최우수상
-<img width="809" alt="Untitled" src="https://github.com/Dementia-Diagnosis-Project/memoria_AI/assets/157015760/ec9c78b6-1fb0-45b6-bc35-1c251bac0be2)https://github.com/Dementia-Diagnosis-Project/memoria_AI/assets/157015760/ec9c78b6-1fb0-45b6-bc35-1c251bac0be2">
 
-# Competition Process
-
-## Timeline
-
-## Project Outline
-
-## Folder Structure
+## 파일 구조
+```
+MEMORIA_AI/
+├── img/
+│   └── award.jpg
+├── InceptionResNetV2/
+│   ├── tensor_py/  (TensorFlow 버전)
+│   └── torch_py/   (PyTorch 버전)
+├── PatchSVDD/
+│   ├── codes/      (Patch-based Anomaly Detection)
+├── Transformer/
+│   └── (VisionTransformer, SwinTransformer)
+├── EDA.ipynb       (데이터 탐색)
+├── preprocessing.py (전처리 스크립트)
+├── sharpening_png.py (이미지 색인 가장)
+├── README.md
+```
